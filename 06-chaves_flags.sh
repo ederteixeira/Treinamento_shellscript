@@ -22,6 +22,8 @@
 #       -Alteração: parametros -s -h -v
 #     v1.1 30/08/2021 - Éder
 #       -Alteração: Adicionado o case e chaves
+#     v1.2 30/08/2021 - Éder
+#       -Alteração: Adicionado o while
 #
 # --------------------------------------------------------------------- #
 #
@@ -37,25 +39,22 @@ MENSAGEM_USU="
   -s - Ordernar
   -m - maiusculo
 "
-VERSAO="v1.1"
+VERSAO="v1.2"
 CHAVE_ORDENA=0
 CHAVE_MAISCULO=0
-#
-# ---------------------------- Testes --------------------------------- #
-#
-#
-# --------------------------- Funções --------------------------------- #
-#
-#
+
 # -------------------------- Execução --------------------------------- #
-case "$1" in
-  -h) echo "$MENSAGEM_USU" && exit 0   ;;
-  -v) echo "$VERSAO" && exit 0         ;;
-  -s) CHAVE_ORDENA=1                   ;;
-  -m) CHAVE_MAISCULO=1                 ;;
-   *) echo "$USUARIOS"                 ;;
-esac
-[ "$CHAVE_ORDENA" -eq 1 ] && echo "$USUARIOS" | sort
-[ "$CHAVE_MAISCULO" -eq 1 ] && echo "$USUARIOS" | tr [a-z] [A-Z]
-#
-#
+while test -n "$1"
+do
+  case "$1" in
+    -h) echo "$MENSAGEM_USU" && exit 0   ;;
+    -v) echo "$VERSAO" && exit 0         ;;
+    -s) CHAVE_ORDENA=1                   ;;
+    -m) CHAVE_MAISCULO=1                 ;;
+     *) echo "Valor inválido" && exit 1  ;;
+  esac
+  shift
+done
+[ "$CHAVE_ORDENA" -eq 1 ] && USUARIOS=$(echo "$USUARIOS" | sort)
+[ "$CHAVE_MAISCULO" -eq 1 ] && USUARIOS=$(echo "$USUARIOS" | tr [a-z] [A-Z])
+echo "$USUARIOS"
