@@ -33,11 +33,12 @@
 # -------------------------- Variáveis -------------------------------- #
 USUARIOS=$(cat /etc/passwd | cut -d : -f 1)
 MENSAGEM_USU="
-  $(basename $0) - [OPÇÕES]
+  $(basename $0)
+  [OPÇÕES]
   -h - Menu de ajuda
-  -v - Versao
+  -v - Versão
   -s - Ordernar
-  -m - maiusculo
+  -m - maiúsculo
 "
 VERSAO="v1.2"
 CHAVE_ORDENA=0
