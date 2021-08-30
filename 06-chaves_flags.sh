@@ -19,7 +19,9 @@
 # Histórico:
 #     v1.0 23/08/2021 - Éder
 #       -Inicio do programa
-#       -Alteração:
+#       -Alteração: parametros -s -h -v
+#     v1.1 30/08/2021 - Éder
+#       -Alteração: Adicionado o case e chaves
 #
 # --------------------------------------------------------------------- #
 #
@@ -29,12 +31,15 @@
 # -------------------------- Variáveis -------------------------------- #
 USUARIOS=$(cat /etc/passwd | cut -d : -f 1)
 MENSAGEM_USU="
-  $0 - [OPÇÕES]
+  $(basename $0) - [OPÇÕES]
   -h - Menu de ajuda
   -v - Versao
   -s - Ordernar
+  -m - maiusculo
 "
-VERSAO="v1.0"
+VERSAO="v1.1"
+CHAVE_ORDENA=0
+CHAVE_MAISCULO=0
 #
 # ---------------------------- Testes --------------------------------- #
 #
@@ -43,15 +48,14 @@ VERSAO="v1.0"
 #
 #
 # -------------------------- Execução --------------------------------- #
-if [ "$1" = "-h" ];then
-  echo "$MENSAGEM_USU" && exit 0
-fi
-if [ "$1" = "-v" ]; then
-  echo "$VERSAO" && exit 0
-fi
-if [ "$1" = "-s" ]; then
-  echo "$USUARIOS" | sort && exit 0
-fi
-echo "$USUARIOS"
+case "$1" in
+  -h) echo "$MENSAGEM_USU" && exit 0   ;;
+  -v) echo "$VERSAO" && exit 0         ;;
+  -s) CHAVE_ORDENA=1                   ;;
+  -m) CHAVE_MAISCULO=1                 ;;
+   *) echo "$USUARIOS"                 ;;
+esac
+[ "$CHAVE_ORDENA" -eq 1 ] && echo "$USUARIOS" | sort
+[ "$CHAVE_MAISCULO" -eq 1 ] && echo "$USUARIOS" | tr [a-z] [A-Z]
 #
 #
