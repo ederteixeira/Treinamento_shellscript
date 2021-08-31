@@ -11,10 +11,19 @@
 # Debugando o código
 #
 # Exemplos:
-# Utilizar os parametros:
-# bash -x ./07-debuger.sh -v -s -> Tem uma saída mais simples
-# bash -xv ./07-debuger.sh -v -s -> Tem uma saída completa
-# Este tipo de debug é utilziado em códigos mais simples (exemplo abaixo)
+# 1-Debug simples:
+# Exemplo por parametros:
+#   bash -x ./07-debuger.sh -v -s -> Tem uma saída mais simples
+#   bash -xv ./07-debuger.sh -v -s -> Tem uma saída completa
+# Este tipo de debug é utilizado em códigos mais simples
+#
+# 2-Debug por parte específica ou linha
+#   set -x -> Informa o início
+#   set +x -> Informa o fim
+# Exemplo por parte:
+#   set -x
+#   [ "$CHAVE_MAISCULO" -eq 1 ] && USUARIOS=$(echo "$USUARIOS" | tr [a-z] [A-Z])
+#   set +x
 #
 # --------------------------------------------------------------------- #
 # Histórico:
@@ -54,6 +63,8 @@ do
   esac
   shift
 done
+set -x
 [ "$CHAVE_ORDENA" -eq 1 ] && USUARIOS=$(echo "$USUARIOS" | sort)
 [ "$CHAVE_MAISCULO" -eq 1 ] && USUARIOS=$(echo "$USUARIOS" | tr [a-z] [A-Z])
+set +x
 echo "$USUARIOS"
