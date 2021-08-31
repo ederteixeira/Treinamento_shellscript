@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# 06-chaveseflags.sh - Extrai usuarios do /etc/passwd
+# 07-debuger.sh - Exemplo de debug
 #
 # site: github.com/ederteixeira
 # autor: Éder Teixeira
@@ -8,22 +8,16 @@
 #
 # --------------------------------------------------------------------- #
 # Descrição:
-# Irá extrair usuários do /etc/passwd com possibilidade de por em maiusculo
-# e ordem alfabetica
+# Debugando o código
 #
 # Exemplos:
-# 06-chaveseflags.sh -s -m
-# Neste exemplo ficará em ordem alfabetica e maiusculo
+# bash -x ./07-debuger.sh -v -s
+# bash -xv ./07-debuger.sh -v -s
 #
 # --------------------------------------------------------------------- #
 # Histórico:
-#     v1.0 23/08/2021 - Éder
-#       -Inicio do programa
-#       -Alteração: parametros -s -h -v
-#     v1.1 30/08/2021 - Éder
-#       -Alteração: Adicionado o case e chaves
-#     v1.2 30/08/2021 - Éder
-#       -Alteração: Adicionado o while
+#     v1.0 30/08/2021 - Éder
+#       -Inicio do exemplo do debug
 #
 # --------------------------------------------------------------------- #
 #
