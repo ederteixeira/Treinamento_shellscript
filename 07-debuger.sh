@@ -11,13 +11,17 @@
 # Debugando o código
 #
 # Exemplos:
-# bash -x ./07-debuger.sh -v -s
-# bash -xv ./07-debuger.sh -v -s
+# Utilizar os parametros:
+# bash -x ./07-debuger.sh -v -s -> Tem uma saída mais simples
+# bash -xv ./07-debuger.sh -v -s -> Tem uma saída completa
+# Este tipo de debug é utilziado em códigos mais simples (exemplo abaixo)
 #
 # --------------------------------------------------------------------- #
 # Histórico:
 #     v1.0 30/08/2021 - Éder
 #       -Inicio do exemplo do debug
+#     v1.1 30/08/2021 - Éder
+#       -Ajustando comentários.
 #
 # --------------------------------------------------------------------- #
 #
