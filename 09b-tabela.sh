@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 << 'formatacao'
+
+Formatação:
+
 1 Negrito
 2 Borrado
 4 Sublinhado

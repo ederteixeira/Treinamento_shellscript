@@ -33,7 +33,7 @@ echo "Informe o texto: "
 read USER
 echo "
     [Menu: ]
-    Informe o numero da cor:
+    Informe o numero da cor escolhida:
     1 - Preto
     2 - Vermelho
     3 - Verde
