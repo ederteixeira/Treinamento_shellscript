@@ -1,13 +1,4 @@
 #!/usr/bin/env bash
-: '
-expr1 -eq expr2 --> sao iguais
-expr1 -ne expr2 --> não são iguais
-expr1 -gt expr2 --> expr1 é maior que o expr2
-expr1 -ge expr2 --> expr1 é maior ou igual ao expr2
-expr1 -lt expr2 --> expr1 é menor que o expr2
-expr1 -le expr2 --> expr1 é menor ou igual ao expr2
-! expr1         --> Nega o resultado da expressão
-'
 
 echo "WHILE 1 -eq"
 CONT1=0
