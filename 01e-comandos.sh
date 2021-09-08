@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 << 'comentario'
 * Comparação de Strings
 
