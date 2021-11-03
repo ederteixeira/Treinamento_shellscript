@@ -19,7 +19,7 @@
 [ ! -x "$(which lynx)" ] && sudo apt install lynx -y
 #
 # -------------------------Variaveis---------------------------- #
-ARQ_TITULOS="arquivo.txt"
+ARQ_TITULOS="11-arquivo.txt"
 
-lynx -source www.amigoscode.com/courses | grep course-listing-title | sed 's/<div.*title="//;s/">//' > arquivo.txt
-cat arquivo.txt
+lynx -source www.amigoscode.com/courses | grep course-listing-title | sed 's/<div.*title="//;s/">//' > 11-arquivo.txt
+cat 11-arquivo.txt
