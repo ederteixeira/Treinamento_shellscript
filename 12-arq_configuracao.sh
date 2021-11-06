@@ -12,6 +12,8 @@
 #       -Inicio do programa
 #     v1.1 06/11/2021 - Éder
 #       -Alteração: Inclusão da função.
+#     v1.2 06/11/2021 - Éder
+#       -Alteração: Inclusão da letras maiusculas e cores
 # --------------------------------------------------------------------- #
 #   Testado em:
 #   bash 5.0.17(1)
@@ -44,6 +46,8 @@ do
   DefParametro "$linha"
 done < "$ARQ_CONFIG"
 
-echo "O valor da cor é: $COR"
-echo "O valor do maiusculo é: $MAIUSCULO"
+[ "$MAIUSCULO" = "1" ] && MSG="$(echo -e $MSG | tr a-z A-Z)"
+[ "$COR" = "1" ] && MSG="$(echo -e ${AZUL}$MSG)"
+
+echo "$MSG"
 #
