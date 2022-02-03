@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 12-uarq_configuracao.sh
+# 12-arquivo_configuracao.sh
 # site: github.com/ederteixeira
 # autor: Éder Teixeira
 # Manutenção: Éder Teixeira

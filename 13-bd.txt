@@ -1,0 +1,7 @@
+# Lista de usuários
+
+1:eder:ed@gmail.com
+5:Lena:le@gmail.com
+2:juka:ju@gmail.com
+3:lala:la@gmail.com
+4:mara:ma@gmail.com
