@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 echo "Script condicional *** $0  ***"
 
 VAR1="5"

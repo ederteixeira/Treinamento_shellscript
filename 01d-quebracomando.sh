@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # barra \ quebra a linha e o comando continua na próxima linha
 sudo find /home/eder/Documentos \
        -iname "*.pdf" \

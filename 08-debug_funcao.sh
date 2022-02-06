@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #
 # 08-debug_funcao.sh - Exemplo de debug
 #

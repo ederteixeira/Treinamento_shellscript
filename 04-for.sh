@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 echo "$0"
 for (( i = 1; i <= 5; i++ )); do
   echo "$i"

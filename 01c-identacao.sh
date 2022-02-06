@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 PAR=1
 if [[ $PAR -gt 0 ]] #valida parametro 0
 then

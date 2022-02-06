@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #
 # 01-cabecalho.sh - Cabeçalho e estrutura do código
 #

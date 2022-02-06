@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #
 # 07-debuger.sh - Exemplo de debug
 #

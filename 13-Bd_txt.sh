@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #
 # arquivo: 13-bd_txt.sh
 # autor: Éder Teixeira

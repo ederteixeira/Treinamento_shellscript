@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #
 # 09-addcolors.sh - Exemplo de exibição com cores
 #

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #
 # 11-extracao_site.sh - Extrai cursos do site amigoscode
 #

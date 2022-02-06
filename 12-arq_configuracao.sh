@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # 12-arquivo_configuracao.sh
 # site: github.com/ederteixeira
 # autor: Éder Teixeira

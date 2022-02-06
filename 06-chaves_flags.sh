@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #
 # 06-chaveseflags.sh - Extrai usuarios do /etc/passwd
 #

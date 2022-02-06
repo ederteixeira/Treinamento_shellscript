@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Exemplo: ^ - Início da linha
 grep "^m" /etc/passwd

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 << 'comentario'
 * Comparação de Strings
